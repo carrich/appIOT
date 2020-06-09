@@ -44,7 +44,6 @@ class SecondViewController: UIViewController {
         controllview.layer.shadowOffset = CGSize(width: 0, height: 3)
         controllview.layer.shadowRadius = 3
         controllview.layer.shadowOpacity = 1
-        
         controllview.layer.cornerRadius = 12.5
         
         controlTable.layer.shadowColor = UIColor(red: 0.145, green: 0.2, blue: 0.294, alpha: 0.1).cgColor
@@ -92,7 +91,6 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
         Cell.airConditionerView.layer.shadowOffset = CGSize(width: 0, height: 3)
         Cell.airConditionerView.layer.shadowRadius = 3
         Cell.airConditionerView.layer.shadowOpacity = 1
-        
         Cell.airConditionerView.layer.cornerRadius = 12.5
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(popup))

@@ -147,7 +147,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="House Icon" id="bcC-3s-ETv"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home2" id="bcC-3s-ETv"/>
                     <connections>
                         <outlet property="RoomTable" destination="goe-oD-uxR" id="E60-JF-gQD"/>
                         <outlet property="notification" destination="44M-sP-Ozb" id="lnJ-U1-dXo"/>
@@ -156,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="1008"/>
+            <point key="canvasLocation" x="302.89855072463769" y="1007.8125"/>
         </scene>
         <!--Rooms-->
         <scene sceneID="JYW-TK-9rt">
@@ -494,7 +494,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oBa-4W-pgC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rooms" image="Rooms Icon" id="1Sz-F2-esQ"/>
+                    <tabBarItem key="tabBarItem" title="Rooms" image="rooms1" id="1Sz-F2-esQ"/>
                     <connections>
                         <outlet property="ADD" destination="OmO-E7-nxT" id="8dO-46-Tiy"/>
                         <outlet property="circleIndecate" destination="3Ed-Vp-7Mg" id="L7m-Ny-KJw"/>
@@ -519,7 +519,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4tF-Hv-Ek1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Automation" image="Clock Icon" id="SMc-Yw-Kem"/>
+                    <tabBarItem key="tabBarItem" title="Automation" image="automation1" id="SMc-Yw-Kem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTG-Kf-Cmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -535,7 +535,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bqX-dG-oWB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="Settings Icon" id="89g-T8-0cX"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="89g-T8-0cX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uq6-dT-v2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -547,6 +547,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JER-gY-2yE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YYe-EL-SrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -564,18 +565,18 @@
     </scenes>
     <resources>
         <image name="Add Icon" width="27" height="27"/>
-        <image name="Clock Icon" width="38" height="38"/>
         <image name="Filter Button" width="41" height="36"/>
-        <image name="House Icon" width="38" height="38"/>
         <image name="Image" width="84" height="84"/>
         <image name="Music Note Icon" width="48" height="48"/>
         <image name="Next Icon" width="30" height="25"/>
         <image name="Pause Icon" width="27" height="34"/>
         <image name="Previous Icon" width="30" height="25"/>
-        <image name="Rooms Icon" width="40" height="40"/>
-        <image name="Settings Icon" width="39" height="39"/>
         <image name="Snowflake Icon" width="52" height="55"/>
         <image name="Swipe Bar" width="75" height="10"/>
         <image name="Toggle" width="60" height="30"/>
+        <image name="automation1" width="24" height="24"/>
+        <image name="home2" width="24" height="24"/>
+        <image name="rooms1" width="16" height="16"/>
+        <image name="settings" width="24" height="24"/>
     </resources>
 </document>

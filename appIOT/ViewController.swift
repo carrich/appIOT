@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     
     @IBOutlet var oval: UIView!
     
-    let rooms = [ Room(name: "Living Room", div: "4 Devices", image: "Background"),
-                  Room(name: "Media Room", div: "6 Devices", image: "BackgroundM"),
-                  Room(name: "Bathroom", div: "4 Devices", image: "BackgroundB"),
-                  Room(name: "Bedroom", div: "4 Devices", image: "BackgroundBe")
+    let rooms = [ Room(name: "Living Room", div: "4 Devices", image: "livingroom"),
+                  Room(name: "Media Room", div: "6 Devices", image: "mediaRoom2"),
+                  Room(name: "Bathroom", div: "4 Devices", image: "badRoom3"),
+                  Room(name: "Bedroom", div: "4 Devices", image: "bedRoom2")
     ]
     
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         notification.layer.cornerRadius = 8
         RoomTable.register(UINib(nibName: "RoomTableViewCell", bundle: nil), forCellReuseIdentifier: "RoomTableViewCell")
         RoomTable.separatorStyle = .none
-        RoomTable.rowHeight = 140
+        RoomTable.rowHeight = 150
     }
     
     
@@ -44,6 +44,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         cell.name.text = rooms[indexPath.row].name
         cell.device.text = rooms[indexPath.row ].div
         cell.background.image = UIImage(named: rooms[indexPath.row].image)
+        cell.background.layer.cornerRadius = 12.5
+        cell.background.clipsToBounds = true
+        cell.backView.layer.shadowColor = UIColor.gray.cgColor
+            cell.backView.layer.shadowOffset = CGSize(width: 0, height: 3)
+               cell.background.layer.shadowRadius = 3
+               cell.backView.layer.shadowOpacity = 1
+             cell.backView.layer.cornerRadius = 12.5
         return cell
     }
     

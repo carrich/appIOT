@@ -89,6 +89,7 @@
 				31937F1F2489FF7C00875158 /* font */,
 				31937F1D2489F7AE00875158 /* Canvas.swift */,
 				311670BF24874B1F004F7945 /* AppDelegate.swift */,
+				319D8E432488D15B004BA38D /* SecondViewController.swift */,
 				311670D324876D32004F7945 /* RoomCollectionViewCell.swift */,
 				311670C124874B1F004F7945 /* SceneDelegate.swift */,
 				311670C324874B1F004F7945 /* ViewController.swift */,
@@ -100,7 +101,6 @@
 				311670D8248773A3004F7945 /* RoomTableViewCell.xib */,
 				319D8E412488B433004BA38D /* Room.swift */,
 				31937F30248A0CF300875158 /* RoomM.swift */,
-				319D8E432488D15B004BA38D /* SecondViewController.swift */,
 			);
 			path = appIOT;
 			sourceTree = "<group>";
