@@ -35,10 +35,10 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        ADD.layer.borderWidth = 2
-        ADD.layer.borderColor = UIColor.gray.cgColor
-        
-        ADD.layer.cornerRadius = 12.5
+//        ADD.layer.borderWidth = 2
+//        ADD.layer.borderColor = UIColor.gray.cgColor
+//        
+//        ADD.layer.cornerRadius = 12.5
         controlTable.center.y += 600
         controllview.layer.shadowColor = UIColor(red: 0.145, green: 0.2, blue: 0.294, alpha: 0.1).cgColor
         controllview.layer.shadowOffset = CGSize(width: 0, height: 3)

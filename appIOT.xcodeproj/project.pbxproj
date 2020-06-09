@@ -16,6 +16,7 @@
 		311670D424876D32004F7945 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311670D324876D32004F7945 /* RoomCollectionViewCell.swift */; };
 		311670D9248773A3004F7945 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311670D7248773A3004F7945 /* RoomTableViewCell.swift */; };
 		311670DA248773A3004F7945 /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311670D8248773A3004F7945 /* RoomTableViewCell.xib */; };
+		313CA7F3248F46000010BE10 /* RectangularDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313CA7F2248F46000010BE10 /* RectangularDashedView.swift */; };
 		31937F1E2489F7AE00875158 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31937F1D2489F7AE00875158 /* Canvas.swift */; };
 		31937F282489FF7C00875158 /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31937F202489FF7C00875158 /* Proxima Nova Alt Thin.otf */; };
 		31937F292489FF7C00875158 /* Proxima Nova Alt Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31937F212489FF7C00875158 /* Proxima Nova Alt Bold.otf */; };
@@ -42,6 +43,7 @@
 		311670D324876D32004F7945 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		311670D7248773A3004F7945 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
 		311670D8248773A3004F7945 /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
+		313CA7F2248F46000010BE10 /* RectangularDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularDashedView.swift; sourceTree = "<group>"; };
 		31937F1D2489F7AE00875158 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		31937F202489FF7C00875158 /* Proxima Nova Alt Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Thin.otf"; sourceTree = "<group>"; };
 		31937F212489FF7C00875158 /* Proxima Nova Alt Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Bold.otf"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				31937F1D2489F7AE00875158 /* Canvas.swift */,
 				311670BF24874B1F004F7945 /* AppDelegate.swift */,
 				319D8E432488D15B004BA38D /* SecondViewController.swift */,
+				313CA7F2248F46000010BE10 /* RectangularDashedView.swift */,
 				311670D324876D32004F7945 /* RoomCollectionViewCell.swift */,
 				311670C124874B1F004F7945 /* SceneDelegate.swift */,
 				311670C324874B1F004F7945 /* ViewController.swift */,
@@ -204,6 +207,7 @@
 				311670C424874B1F004F7945 /* ViewController.swift in Sources */,
 				311670D9248773A3004F7945 /* RoomTableViewCell.swift in Sources */,
 				319D8E422488B433004BA38D /* Room.swift in Sources */,
+				313CA7F3248F46000010BE10 /* RectangularDashedView.swift in Sources */,
 				31937F1E2489F7AE00875158 /* Canvas.swift in Sources */,
 				311670C024874B1F004F7945 /* AppDelegate.swift in Sources */,
 				319D8E442488D15B004BA38D /* SecondViewController.swift in Sources */,

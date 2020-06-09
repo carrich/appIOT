@@ -278,35 +278,42 @@
                                     <outlet property="delegate" destination="jDf-8o-8Dv" id="kJY-DZ-EIB"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-E7-nxT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-E7-nxT" customClass="RectangularDashedView" customModule="appIOT" customModuleProvider="target">
                                 <rect key="frame" x="20" y="729" width="374" height="54"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add Icon" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-Rp-xBx">
-                                        <rect key="frame" x="20" y="13.5" width="27" height="27"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-Se-z1j">
+                                        <rect key="frame" x="60" y="16" width="238" height="22"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="1U8-LX-wjm"/>
-                                            <constraint firstAttribute="width" constant="27" id="vh3-PV-OWL"/>
+                                            <constraint firstAttribute="width" constant="200" id="aDY-uU-c1r"/>
                                         </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-Se-z1j">
-                                        <rect key="frame" x="60" y="10.5" width="150" height="33"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="aDY-uU-c1r"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
-                                        <state key="normal" title="Add a new device">
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                        <state key="normal" title="Add a new device" image="plus-2">
                                             <color key="titleColor" red="0.60784313725490191" green="0.64313725490196072" blue="0.69019607843137254" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="030-OX-6xl"/>
-                                    <constraint firstItem="lQj-Se-z1j" firstAttribute="leading" secondItem="OmO-E7-nxT" secondAttribute="leading" constant="60" id="2tb-X2-JQR"/>
+                                    <constraint firstItem="lQj-Se-z1j" firstAttribute="leading" secondItem="OmO-E7-nxT" secondAttribute="leading" constant="20" id="2tb-X2-JQR"/>
                                     <constraint firstItem="lQj-Se-z1j" firstAttribute="centerY" secondItem="OmO-E7-nxT" secondAttribute="centerY" id="AaE-bz-j1i"/>
-                                    <constraint firstItem="lQj-Se-z1j" firstAttribute="height" secondItem="iBy-Rp-xBx" secondAttribute="height" multiplier="1.22222" id="g2T-tx-oZN"/>
-                                    <constraint firstItem="iBy-Rp-xBx" firstAttribute="leading" secondItem="OmO-E7-nxT" secondAttribute="leading" constant="20" id="toB-CU-FaB"/>
-                                    <constraint firstItem="iBy-Rp-xBx" firstAttribute="centerY" secondItem="OmO-E7-nxT" secondAttribute="centerY" id="ubg-cT-MOI"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                        <color key="value" red="0.47450980392156861" green="0.52941176470588236" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" id="NuR-wo-JpL" userLabel="controllM">
                                 <rect key="frame" x="18" y="645" width="374" height="67"/>
@@ -379,7 +386,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" id="DCu-hw-2q4">
-                                <rect key="frame" x="0.0" y="300" width="403" height="503"/>
+                                <rect key="frame" x="0.0" y="800" width="403" height="503"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-qM-aMr">
@@ -564,7 +571,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Add Icon" width="27" height="27"/>
         <image name="Filter Button" width="41" height="36"/>
         <image name="Image" width="84" height="84"/>
         <image name="Music Note Icon" width="48" height="48"/>
@@ -576,6 +582,7 @@
         <image name="Toggle" width="60" height="30"/>
         <image name="automation1" width="24" height="24"/>
         <image name="home2" width="24" height="24"/>
+        <image name="plus-2" width="16" height="16"/>
         <image name="rooms1" width="16" height="16"/>
         <image name="settings" width="24" height="24"/>
     </resources>
