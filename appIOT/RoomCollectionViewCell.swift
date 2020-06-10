@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+protocol CollectionNew {
+    func onClick(index: Int)
+}
 class RoomCollectionViewCell: UICollectionViewCell {
     
    
@@ -23,7 +25,8 @@ class RoomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var devide: UILabel!
     
     @IBOutlet weak var state: UILabel!
-    
+    var cellDelegate: CollectionNew?
+    var index: IndexPath?
     var roomDetail: RoomM! {
         didSet{
             icon1.image = UIImage(named: roomDetail.icon1)
@@ -34,6 +37,6 @@ class RoomCollectionViewCell: UICollectionViewCell {
        
     }
     @IBAction func switchOff(_ sender: UISwitch) {
-        print(sender.isOn)
+        cellDelegate?.onClick(index: index!.row)
     }
 }

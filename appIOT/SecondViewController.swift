@@ -105,9 +105,8 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
         Cell.airConditionerView.layer.shadowOpacity = 1
         Cell.airConditionerView.layer.cornerRadius = 12.5
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(popup(_ :)))
-        Cell.switchControl.addGestureRecognizer(tap)
-        
+        Cell.cellDelegate = self
+        Cell.index = indexPath
         Cell.roomDetail = listRoom[indexPath.row]
         
         return Cell
@@ -155,6 +154,22 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
     @objc func popup(_ sender: BigSwitch){
         print("g")
     }
+    
+}
+extension SecondViewController: CollectionNew{
+    func onClick(index: Int) {
+        print(index)
+        if listRoom[index].icon2 == true {
+            
+            listRoom[index].icon2 = false
+            
+        } else {
+            listRoom[index].icon2 = true
+        }
+        
+        collectionView1.reloadData()
+    }
+    
     
 }
 
