@@ -16,7 +16,9 @@ class RoomCollectionViewCell: UICollectionViewCell {
    
     @IBOutlet weak var icon1: UIImageView!
     
-    @IBOutlet weak var icon2: UIImageView!
+
+  
+    @IBOutlet weak var switchControl: BigSwitch!
     
     @IBOutlet weak var devide: UILabel!
     
@@ -25,10 +27,13 @@ class RoomCollectionViewCell: UICollectionViewCell {
     var roomDetail: RoomM! {
         didSet{
             icon1.image = UIImage(named: roomDetail.icon1)
-                   icon2.image = UIImage(named: roomDetail.icon2)
+            switchControl.isOn = roomDetail.icon2
                    devide.text = roomDetail.divice
                    state.text = roomDetail.temp
         }
        
+    }
+    @IBAction func switchOff(_ sender: UISwitch) {
+        print(sender.isOn)
     }
 }

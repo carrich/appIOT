@@ -9,7 +9,7 @@
 import Foundation
 struct RoomM {
     var icon1 : String
-    var icon2: String
+    var icon2: Bool
     var divice: String
     var temp: String
 }
