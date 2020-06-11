@@ -19,6 +19,7 @@ class SecondViewController: UIViewController {
     var nameDivice = ""
     var ac = State.inactive
     
+    @IBOutlet weak var endTemp: UILabel!
     @IBOutlet weak var midPoint: UILabel!
     @IBOutlet weak var endPoint: UILabel!
     @IBOutlet weak var startPoint: UILabel!
@@ -41,11 +42,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //        ADD.layer.borderWidth = 2
-        //        ADD.layer.borderColor = UIColor.gray.cgColor
-        //
-        //        ADD.layer.cornerRadius = 12.5
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.9803921569, green: 0.3921568627, blue: 0, alpha: 1)
         controlTable.center.y += 600
         controllview.layer.shadowColor = UIColor(red: 0.145, green: 0.2, blue: 0.294, alpha: 0.1).cgColor
         controllview.layer.shadowOffset = CGSize(width: 0, height: 3)
@@ -59,12 +56,23 @@ class SecondViewController: UIViewController {
         controlTable.layer.shadowOpacity = 1
         
         controlTable.layer.cornerRadius = 12.5
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(sliderDown))
+        controlTable.addGestureRecognizer(gesture)
+        
     }
-    
+    @objc func sliderDown(){
+        if ac == .active {
+            UIView.animate(withDuration: 1) {
+                self.controlTable.center.y += 600
+            }
+            ac = .inactive
+        }
+    }
     @IBAction func changeValue(_ sender: Any) {
         switch nameDivice {
         case "Air Conditioner":
-            let value = cotrolSlider.value * 180
+            let value = cotrolSlider.value * 270
             circleIndecate.changeValue = Int(value)
             valueText.text = "\((Int(value/9)) + 10)°C"
         case "Room Lights":
@@ -120,31 +128,42 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
             switch nameDivice {
             case "Air Conditioner":
                 nameDiviceController.text = "Change Temperate"
+                circleIndecate.showValue = 279
+                slideUp()
             case "Room Lights":
                 startPoint.text = "0 K"
                 midPoint.text = "5000 K"
                 endPoint.text = "10000 K"
                 valueText.text = "0 K"
                 nameDiviceController.text = "Change Lumina"
+                circleIndecate.showValue = 189
+                endTemp.isHidden = true
+                slideUp()
             case "All Speakers":
                 startPoint.text = "0 %"
                 midPoint.text = "50 %"
                 endPoint.text = "100 %"
                 valueText.text = "0 %"
                 nameDiviceController.text = "Change Volume"
+                circleIndecate.showValue = 189
+                endTemp.isHidden = true
+                slideUp()
             default:
                 print("Node")
             }
             
-            UIView.animate(withDuration: 1) {
-                self.controlTable.center.y -= 600
-            }
-            ac = .active
+            
             
         }
     }
     
     
+    func slideUp(){
+        UIView.animate(withDuration: 1) {
+            self.controlTable.center.y -= 600
+        }
+        ac = .active
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }

@@ -413,45 +413,15 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" id="DCu-hw-2q4">
-                                <rect key="frame" x="0.0" y="300" width="403" height="503"/>
+                                <rect key="frame" x="0.0" y="308" width="403" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-qM-aMr">
-                                        <rect key="frame" x="57" y="42" width="289" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="53d-SA-mqD"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
-                                        <color key="textColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y22-zs-45V">
-                                        <rect key="frame" x="183" y="20" width="37" height="5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="5" id="3n7-j6-fz6"/>
-                                            <constraint firstAttribute="width" constant="37" id="DXU-Oo-Qvx"/>
-                                        </constraints>
-                                        <state key="normal" image="Swipe Bar"/>
-                                        <connections>
-                                            <action selector="closeControlTable:" destination="jDf-8o-8Dv" eventType="touchUpInside" id="LFI-Gx-rRh"/>
-                                        </connections>
-                                    </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-rV-i0O">
-                                        <rect key="frame" x="28" y="434" width="354" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="309" id="Fsq-TI-cei"/>
-                                            <constraint firstAttribute="height" constant="29" id="ro7-6N-vDx"/>
-                                        </constraints>
-                                        <connections>
-                                            <action selector="changeValue:" destination="jDf-8o-8Dv" eventType="valueChanged" id="WTW-jT-YS0"/>
-                                        </connections>
-                                    </slider>
                                     <view contentMode="scaleToFill" id="3Ed-Vp-7Mg" customClass="Canvas" customModule="appIOT" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="67" width="387" height="326"/>
+                                        <rect key="frame" x="8" y="30" width="387" height="326"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-Lk-STz">
-                                                <rect key="frame" x="167" y="10" width="63" height="18"/>
+                                                <rect key="frame" x="172" y="40" width="63" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="I8L-47-TnW"/>
                                                     <constraint firstAttribute="width" constant="63" id="n6f-Em-dkZ"/>
@@ -493,9 +463,9 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="1W2-Lk-STz" firstAttribute="top" secondItem="3Ed-Vp-7Mg" secondAttribute="top" constant="10" id="Ic5-zL-QUi"/>
+                                            <constraint firstItem="1W2-Lk-STz" firstAttribute="top" secondItem="3Ed-Vp-7Mg" secondAttribute="top" constant="40" id="Ic5-zL-QUi"/>
                                             <constraint firstAttribute="trailing" secondItem="a5R-9P-peN" secondAttribute="trailing" id="P61-uH-g92"/>
-                                            <constraint firstItem="1W2-Lk-STz" firstAttribute="centerX" secondItem="3Ed-Vp-7Mg" secondAttribute="centerX" constant="5" id="RZw-1c-FRc"/>
+                                            <constraint firstItem="1W2-Lk-STz" firstAttribute="centerX" secondItem="3Ed-Vp-7Mg" secondAttribute="centerX" constant="10" id="RZw-1c-FRc"/>
                                             <constraint firstItem="a5R-9P-peN" firstAttribute="centerY" secondItem="3Ed-Vp-7Mg" secondAttribute="centerY" constant="30" id="SV4-Z7-wtP"/>
                                             <constraint firstItem="MKJ-Vn-E1L" firstAttribute="leading" secondItem="3Ed-Vp-7Mg" secondAttribute="leading" constant="17" id="oXw-14-wyn"/>
                                             <constraint firstItem="MKJ-Vn-E1L" firstAttribute="centerY" secondItem="3Ed-Vp-7Mg" secondAttribute="centerY" constant="30" id="twV-UA-S10"/>
@@ -503,6 +473,46 @@
                                             <constraint firstItem="jcE-VK-0oE" firstAttribute="centerX" secondItem="3Ed-Vp-7Mg" secondAttribute="centerX" id="xXS-fv-B3Y"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-qM-aMr">
+                                        <rect key="frame" x="57" y="30" width="289" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="53d-SA-mqD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
+                                        <color key="textColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y22-zs-45V">
+                                        <rect key="frame" x="183" y="20" width="37" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="3n7-j6-fz6"/>
+                                            <constraint firstAttribute="width" constant="37" id="DXU-Oo-Qvx"/>
+                                        </constraints>
+                                        <state key="normal" image="Swipe Bar"/>
+                                        <connections>
+                                            <action selector="closeControlTable:" destination="jDf-8o-8Dv" eventType="touchUpInside" id="LFI-Gx-rRh"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-rV-i0O">
+                                        <rect key="frame" x="28" y="434" width="354" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="309" id="Fsq-TI-cei"/>
+                                            <constraint firstAttribute="height" constant="29" id="ro7-6N-vDx"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changeValue:" destination="jDf-8o-8Dv" eventType="valueChanged" id="WTW-jT-YS0"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBZ-aA-xlJ">
+                                        <rect key="frame" x="185.5" y="366" width="32" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="FZv-7K-xdP"/>
+                                            <constraint firstAttribute="width" constant="32" id="eG3-7y-oXX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                        <color key="textColor" red="0.60784313729999995" green="0.64313725489999995" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -511,7 +521,9 @@
                                     <constraint firstItem="Y22-zs-45V" firstAttribute="top" secondItem="DCu-hw-2q4" secondAttribute="top" constant="20" id="6tR-Rs-d0x"/>
                                     <constraint firstAttribute="bottom" secondItem="Nit-rV-i0O" secondAttribute="bottom" constant="40" id="I9h-il-cfV"/>
                                     <constraint firstItem="Y22-zs-45V" firstAttribute="centerX" secondItem="DCu-hw-2q4" secondAttribute="centerX" id="MSn-XF-pXA"/>
-                                    <constraint firstItem="Fte-qM-aMr" firstAttribute="top" secondItem="DCu-hw-2q4" secondAttribute="top" constant="42" id="ptg-Rz-r4M"/>
+                                    <constraint firstItem="nBZ-aA-xlJ" firstAttribute="top" secondItem="3Ed-Vp-7Mg" secondAttribute="bottom" constant="10" id="Q4Z-E5-NWT"/>
+                                    <constraint firstItem="nBZ-aA-xlJ" firstAttribute="centerX" secondItem="DCu-hw-2q4" secondAttribute="centerX" id="j5d-FX-SZ6"/>
+                                    <constraint firstItem="Fte-qM-aMr" firstAttribute="top" secondItem="DCu-hw-2q4" secondAttribute="top" constant="30" id="ptg-Rz-r4M"/>
                                     <constraint firstAttribute="trailing" secondItem="Fte-qM-aMr" secondAttribute="trailing" constant="57" id="q7G-hl-vXF"/>
                                 </constraints>
                             </view>
@@ -541,6 +553,7 @@
                         <outlet property="controllview" destination="NuR-wo-JpL" id="eNe-in-nE9"/>
                         <outlet property="cotrolSlider" destination="Nit-rV-i0O" id="Cd5-Gq-E24"/>
                         <outlet property="endPoint" destination="a5R-9P-peN" id="K1a-Um-rUQ"/>
+                        <outlet property="endTemp" destination="nBZ-aA-xlJ" id="ufG-gG-8lY"/>
                         <outlet property="midPoint" destination="1W2-Lk-STz" id="0BD-QD-ILf"/>
                         <outlet property="nameDiviceController" destination="Fte-qM-aMr" id="5mj-8V-Awg"/>
                         <outlet property="startPoint" destination="MKJ-Vn-E1L" id="5yX-of-KcX"/>

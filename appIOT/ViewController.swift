@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.9803921569, green: 0.3921568627, blue: 0, alpha: 1)
         notification.layer.cornerRadius = 8
         RoomTable.register(UINib(nibName: "RoomTableViewCell", bundle: nil), forCellReuseIdentifier: "RoomTableViewCell")
         RoomTable.separatorStyle = .none
@@ -47,10 +48,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         cell.background.layer.cornerRadius = 12.5
         cell.background.clipsToBounds = true
         cell.backView.layer.shadowColor = UIColor.gray.cgColor
-            cell.backView.layer.shadowOffset = CGSize(width: 0, height: 3)
-               cell.background.layer.shadowRadius = 3
-               cell.backView.layer.shadowOpacity = 1
-             cell.backView.layer.cornerRadius = 12.5
+        cell.backView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        cell.background.layer.shadowRadius = 3
+        cell.backView.layer.shadowOpacity = 1
+        cell.backView.layer.cornerRadius = 12.5
         return cell
     }
     
